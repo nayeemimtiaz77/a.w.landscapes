@@ -20,7 +20,6 @@ const featuredProjects = [
     location: 'Banwell',
     description: 'Bespoke pergola with integrated privacy fencing for a stunning outdoor room.',
     images: [
-      { src: '/images/banwell-pergola.jpg', alt: 'Banwell pergola and fencing' },
       { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
       { src: '/images/p2.jpeg', alt: 'Banwell pergola and fencing' },
       { src: '/images/p3.jpeg', alt: 'Banwell pergola and fencing' },
