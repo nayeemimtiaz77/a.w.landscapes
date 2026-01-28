@@ -22,6 +22,14 @@ const featuredProjects = [
     images: [
       { src: '/images/banwell-pergola.jpg', alt: 'Banwell pergola and fencing' },
       { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
+      { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
+      { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
+      { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
+      { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
+      { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
+      { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
+      { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
+      { src: '/images/p1.jpeg', alt: 'Banwell pergola and fencing' },
     ],
   },
 ];
