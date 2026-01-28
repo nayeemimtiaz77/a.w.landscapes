@@ -37,10 +37,10 @@ const bristolTransformation = {
   location: 'Bristol',
   description: 'A stunning complete garden transformation featuring new patio, fencing, artificial grass, and landscaping. This project showcases the dramatic difference professional landscaping can make to any outdoor space.',
   beforeImages: [
-    { src: '/images/bristol-before-1.jpg', alt: 'Bristol garden before - view 1' },
-    { src: '/images/bristol-before-2.jpg', alt: 'Bristol garden before - view 2' },
-    { src: '/images/bristol-before-3.jpg', alt: 'Bristol garden before - view 3' },
-    { src: '/images/bristol-before-4.jpg', alt: 'Bristol garden before - view 4' },
+    { src: '/images/t1.jpeg', alt: 'Bristol garden before - view 1' },
+    { src: '/images/t2.jpeg', alt: 'Bristol garden before - view 2' },
+    { src: '/images/t3.jpeg', alt: 'Bristol garden before - view 3' },
+    { src: '/images/t4.jpeg', alt: 'Bristol garden before - view 4' },
   ],
   afterImages: [
     { src: '/images/bristol-after-1.jpg', alt: 'Bristol garden after - view 1' },
