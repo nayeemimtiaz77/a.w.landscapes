@@ -48,8 +48,8 @@ const bristolTransformation = {
     { src: '/images/t7.jpeg', alt: 'Bristol garden after - view 3' },
     { src: '/images/t8.jpeg', alt: 'Bristol garden after - view 4' },
     { src: '/images/t9.jpeg', alt: 'Bristol garden after - view 5' },
-    { src: '/images/t10.jpeg', alt: 'Bristol garden after - view 6' },
-    { src: '/images/t11.jpeg', alt: 'Bristol garden after - view 7' },
+    { src: '/images/t11.jpeg', alt: 'Bristol garden after - view 6' },
+    { src: '/images/t10.jpeg', alt: 'Bristol garden after - view 7' },
     { src: '/images/t12.jpeg', alt: 'Bristol garden after - view 8' },
   ],
 };
