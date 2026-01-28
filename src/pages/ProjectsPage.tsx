@@ -43,14 +43,14 @@ const bristolTransformation = {
     { src: '/images/t4.jpeg', alt: 'Bristol garden before - view 4' },
   ],
   afterImages: [
-    { src: '/images/bristol-after-1.jpg', alt: 'Bristol garden after - view 1' },
-    { src: '/images/bristol-after-2.jpg', alt: 'Bristol garden after - view 2' },
-    { src: '/images/bristol-after-3.jpg', alt: 'Bristol garden after - view 3' },
-    { src: '/images/bristol-after-4.jpg', alt: 'Bristol garden after - view 4' },
-    { src: '/images/bristol-after-5.jpg', alt: 'Bristol garden after - view 5' },
-    { src: '/images/bristol-after-6.jpg', alt: 'Bristol garden after - view 6' },
-    { src: '/images/bristol-after-7.jpg', alt: 'Bristol garden after - view 7' },
-    { src: '/images/bristol-after-8.jpg', alt: 'Bristol garden after - view 8' },
+    { src: '/images/t5.jpeg', alt: 'Bristol garden after - view 1' },
+    { src: '/images/t6.jpeg', alt: 'Bristol garden after - view 2' },
+    { src: '/images/t7.jpeg', alt: 'Bristol garden after - view 3' },
+    { src: '/images/t8.jpeg', alt: 'Bristol garden after - view 4' },
+    { src: '/images/t9.jpeg', alt: 'Bristol garden after - view 5' },
+    { src: '/images/t10.jpeg', alt: 'Bristol garden after - view 6' },
+    { src: '/images/t11.jpeg', alt: 'Bristol garden after - view 7' },
+    { src: '/images/t12.jpeg', alt: 'Bristol garden after - view 8' },
   ],
 };
 
