@@ -28,7 +28,6 @@ const featuredProjects = [
       { src: '/images/p6.jpeg', alt: 'Banwell pergola and fencing' },
       { src: '/images/p7.jpeg', alt: 'Banwell pergola and fencing' },
       { src: '/images/p8.jpeg', alt: 'Banwell pergola and fencing' },
-      { src: '/images/p9.jpeg', alt: 'Banwell pergola and fencing' },
     ],
   },
 ];
