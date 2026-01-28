@@ -53,14 +53,22 @@ const beforeAfterProjects = [
 ];
 
 const galleryImages = [
-  { src: '/images/gallery-1.jpg', alt: 'A.W Landscapes project' },
   { src: '/images/1.jpeg', alt: 'A.W Landscapes project' },
+  { src: '/images/2.jpeg', alt: 'A.W Landscapes project' },
+  { src: '/images/3.jpeg', alt: 'A.W Landscapes project' },
+  { src: '/images/4.jpeg', alt: 'A.W Landscapes project' },
+  { src: '/images/5.jpeg', alt: 'A.W Landscapes project' },
+  { src: '/images/6.jpeg', alt: 'A.W Landscapes project' },
+  { src: '/images/7.jpeg', alt: 'A.W Landscapes project' },
+  { src: '/images/8.jpeg', alt: 'A.W Landscapes project' },
+  { src: '/images/9.jpeg', alt: 'A.W Landscapes project' },
   { src: '/images/gallery-2.jpg', alt: 'Garden transformation' },
   { src: '/images/gallery-3.jpg', alt: 'Landscaping work' },
   { src: '/images/gallery-4.jpg', alt: 'Outdoor project' },
   { src: '/images/gallery-5.jpg', alt: 'Garden design' },
   { src: '/images/gallery-6.jpg', alt: 'Landscape project' },
   { src: '/images/gallery-7.jpg', alt: 'Bristol landscaping' },
+  { src: '/images/gallery-1.jpg', alt: 'A.W Landscapes project' },
 ];
 
 const ProjectsPage = () => {
