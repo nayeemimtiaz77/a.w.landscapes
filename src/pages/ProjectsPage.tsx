@@ -123,6 +123,95 @@ const ProjectsPage = () => {
         </div>
       </section>
 
+      {/* Bristol Transformation Showcase */}
+      <section className="section-padding bg-muted">
+        <div className="container-wide">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 text-accent mb-3">
+              <MapPin className="h-4 w-4" />
+              <span className="text-sm font-medium">{bristolTransformation.location}</span>
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
+              {bristolTransformation.title}
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              {bristolTransformation.description}
+            </p>
+          </div>
+
+          {/* Before Section */}
+          <div className="mb-12">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
+                Before
+              </span>
+              <div className="h-px flex-1 bg-border" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {bristolTransformation.beforeImages.map((image, index) => (
+                <div
+                  key={image.src}
+                  className="group relative aspect-square overflow-hidden rounded-xl shadow-card hover-lift"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <span className="absolute bottom-3 left-3 text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    View {index + 1}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Arrow Divider */}
+          <div className="flex justify-center my-8">
+            <div className="flex items-center gap-4">
+              <div className="h-px w-16 bg-accent" />
+              <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
+                <svg className="w-6 h-6 text-accent-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+              <div className="h-px w-16 bg-accent" />
+            </div>
+          </div>
+
+          {/* After Section */}
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold">
+                After
+              </span>
+              <div className="h-px flex-1 bg-border" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {bristolTransformation.afterImages.map((image, index) => (
+                <div
+                  key={image.src}
+                  className="group relative aspect-square overflow-hidden rounded-xl shadow-card hover-lift"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <span className="absolute bottom-3 left-3 text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    View {index + 1}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Projects */}
       <section className="section-padding bg-background">
         <div className="container-wide">
