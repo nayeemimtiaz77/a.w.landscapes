@@ -62,7 +62,6 @@ const galleryImages = [
   { src: '/images/7.jpeg', alt: 'A.W Landscapes project' },
   { src: '/images/8.jpeg', alt: 'A.W Landscapes project' },
   { src: '/images/9.jpeg', alt: 'A.W Landscapes project' },
-  { src: '/images/10.jpeg', alt: 'A.W Landscapes project' },
   { src: '/images/gallery-2.jpg', alt: 'Garden transformation' },
   { src: '/images/gallery-3.jpg', alt: 'Landscaping work' },
   { src: '/images/gallery-4.jpg', alt: 'Outdoor project' },
