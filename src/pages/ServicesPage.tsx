@@ -61,20 +61,7 @@ const services = [
     why: 'Retaining walls turn unusable slopes into functional garden areas. Proper construction ensures stability and prevents water damage to your property.',
     image: '/images/gallery-4.jpg',
   },
-  {
-    id: 'railings',
-    icon: Grid3X3,
-    title: 'Railings Installation',
-    intro: 'Safety and style combined for steps, raised areas, and boundaries.',
-    includes: [
-      'Metal and glass railings',
-      'Timber balustrades',
-      'Handrails for steps',
-      'Boundary railings',
-    ],
-    why: 'Essential for safety on steps and raised areas, railings also add a polished finish to your landscaping project.',
-    image: '/images/gallery-6.jpg',
-  },
+
   {
     id: 'grass',
     icon: Leaf,
