@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import BeforeAfterSlider from '@/components/ui/BeforeAfterSlider';
 
 const transformations = [
   {
@@ -41,37 +40,70 @@ const TransformationsSection = () => {
             Featured Transformations
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Drag the slider to reveal the dramatic before and after of our recent projects.
+            See the dramatic before and after of our recent projects.
           </p>
         </div>
 
         {/* Transformations Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="space-y-12">
           {transformations.map((transformation) => (
-            <div key={transformation.title} className="space-y-4">
-              <BeforeAfterSlider
-                beforeImage={transformation.before}
-                afterImage={transformation.after}
-                className="shadow-card"
-              />
-              <div>
-                <h3 className="font-display text-xl font-semibold text-foreground">
+            <div key={transformation.title} className="bg-white p-6 rounded-xl shadow-card">
+              <div className="mb-4">
+                <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                   {transformation.title}
                 </h3>
                 <p className="text-muted-foreground text-sm">{transformation.description}</p>
+              </div>
+              
+              {/* Side-by-side display of before and after */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="relative aspect-video overflow-hidden rounded-lg">
+                  <img
+                    src={transformation.before}
+                    alt={`Before: ${transformation.title}`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                    Before
+                  </div>
+                </div>
+                
+                <div className="relative aspect-video overflow-hidden rounded-lg">
+                  <img
+                    src={transformation.after}
+                    alt={`After: ${transformation.title}`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
+                    After
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="text-center">
-          <Button asChild size="lg" variant="outline" className="gap-2">
-            <Link to="/projects">
-              View All Projects
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </Button>
+        <div className="text-center mt-12">
+          <p className="text-muted-foreground mb-4">
+            For more inspiration check out our Facebook & Instagram pages
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" variant="outline" className="gap-2">
+              <a href="https://www.facebook.com/AWLandscape" target="_blank" rel="noopener noreferrer">
+                Facebook
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="gap-2">
+              <a href="https://www.instagram.com/a.w.landscapes_" target="_blank" rel="noopener noreferrer">
+                Instagram
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
