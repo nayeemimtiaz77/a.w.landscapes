@@ -147,11 +147,11 @@ const ProjectsPage = () => {
               </span>
               <div className="h-px flex-1 bg-border" />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {bristolTransformation.beforeImages.map((image, index) => (
                 <div
                   key={image.src}
-                  className="group relative aspect-square overflow-hidden rounded-xl shadow-card hover-lift"
+                  className="group relative aspect-video overflow-hidden rounded-xl shadow-card hover-lift"
                 >
                   <img
                     src={image.src}
@@ -189,11 +189,11 @@ const ProjectsPage = () => {
               </span>
               <div className="h-px flex-1 bg-border" />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {bristolTransformation.afterImages.map((image, index) => (
                 <div
                   key={image.src}
-                  className="group relative aspect-square overflow-hidden rounded-xl shadow-card hover-lift"
+                  className="group relative aspect-video overflow-hidden rounded-xl shadow-card hover-lift"
                 >
                   <img
                     src={image.src}
@@ -267,7 +267,7 @@ const ProjectsPage = () => {
                 <BeforeAfterSlider
                   beforeImage={project.before}
                   afterImage={project.after}
-                  className="shadow-card"
+                  className="shadow-card aspect-video"
                 />
                 <div>
                   <h3 className="font-display text-xl font-semibold text-foreground">
