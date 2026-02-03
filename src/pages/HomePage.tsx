@@ -10,8 +10,8 @@ const HomePage = () => {
   return (
     <Layout>
       <HeroSection />
-      <ServicesSection />
       <TransformationsSection />
+      <ServicesSection />
       <ArtificialGrassProofSection />
       <ReviewsCarousel />
       <CTASection />
