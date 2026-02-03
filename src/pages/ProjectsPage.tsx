@@ -1,6 +1,5 @@
 import Layout from '@/components/layout/Layout';
 import { MapPin } from 'lucide-react';
-import BeforeAfterSlider from '@/components/ui/BeforeAfterSlider';
 import ImageLightbox from '@/components/ui/ImageLightbox';
 import CTASection from '@/components/sections/CTASection';
 
@@ -249,7 +248,7 @@ const ProjectsPage = () => {
         </div>
       </section>
 
-      {/* Before/After */}
+      {/* Before/After - Changed to show both images side by side instead of slider */}
       <section className="section-padding bg-muted">
         <div className="container-wide">
           <div className="text-center mb-16">
@@ -257,23 +256,45 @@ const ProjectsPage = () => {
               Before & After
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Drag the slider to see the dramatic transformations we've achieved for our clients.
+              See the dramatic transformations we've achieved for our clients.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-12">
             {beforeAfterProjects.map((project) => (
-              <div key={project.title} className="space-y-4">
-                <BeforeAfterSlider
-                  beforeImage={project.before}
-                  afterImage={project.after}
-                  className="shadow-card aspect-video"
-                />
-                <div>
-                  <h3 className="font-display text-xl font-semibold text-foreground">
+              <div key={project.title} className="bg-white p-6 rounded-xl shadow-card">
+                <div className="mb-4">
+                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground text-sm">{project.description}</p>
+                </div>
+                
+                {/* Side-by-side display of before and after */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="relative aspect-video overflow-hidden rounded-lg">
+                    <img
+                      src={project.before}
+                      alt={`Before: ${project.title}`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                      Before
+                    </div>
+                  </div>
+                  
+                  <div className="relative aspect-video overflow-hidden rounded-lg">
+                    <img
+                      src={project.after}
+                      alt={`After: ${project.title}`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
+                      After
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
